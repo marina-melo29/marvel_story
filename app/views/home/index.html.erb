@@ -7,9 +7,33 @@
     <link rel="stylesheet" href="/assets/home.css">
   </head>
   <body>
-    <div class="header">
-      <h3>Marvel Stories</h3>
-      <h1>Storm</h1>
+    <div class="container">
+      <div class="details-page">
+        <div class="description">
+          <div class="page-title"><h2><%= @story_data[:title] %></h2></div>
+
+          <div class="story-description">
+            <h3>Description</h3>
+            <p><%= @story_data[:description] %></p>
+          </div>
+
+          <h2>Characters in this story</h2>
+
+          <div class="characters">
+            <% @characters_urls.each do |character| %>
+              <div class="character">
+                <h4><%= character[:name] %></h4>
+                <%= image_tag "#{character[:url]}", alt: "Character Image" %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="page-title" id="left-title">Marvel Stories</h2>
+          <p><%= @attribution_text %></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
