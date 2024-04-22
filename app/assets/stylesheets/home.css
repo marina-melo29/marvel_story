@@ -1,0 +1,44 @@
+@import 'application';
+
+h1, h2, h3, h4, p {
+  color: azure;
+}
+
+.hero-image-page {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-image-page img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.description {
+  width: 90%;
+}
+
+.page-title {
+  border-bottom: groove;
+  border-color: azure;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.character {
+  padding-right: 20px;
+}
+
+.character img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+#left-title {
+  padding-bottom: 20px;
+}
