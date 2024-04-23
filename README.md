@@ -8,15 +8,6 @@ First configure your api_keys in .env:
   private_key='private_key_example'
 ```
 
-#### Preparing with docker
-
-```http
-  > docker build -t marvel-story .
-  > docker run marvel-story -p 3000
-```
-
-### If you don't use docker, then
-
 #### Install RVM
 
 ```http
