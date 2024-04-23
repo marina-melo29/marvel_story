@@ -20,3 +20,5 @@ gem "puma", ">= 5.0"
 gem "bootsnap", require: false
 
 gem "sqlite3", "~> 1.4"
+
+gem "sprockets-rails"
