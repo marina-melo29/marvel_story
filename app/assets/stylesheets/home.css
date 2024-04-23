@@ -42,3 +42,9 @@ h1, h2, h3, h4, p {
 #left-title {
   padding-bottom: 20px;
 }
+
+.side-details p {
+  position: relative;
+  top: 90%;
+  text-align: right;
+}

@@ -1,24 +1,38 @@
-# README
+# Marvel Story
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Api_keys
+First configure your api_keys in .env:
 
-Things you may want to cover:
+```http
+  api_key='api_key_example'
+  private_key='private_key_example'
+```
 
-* Ruby version
+#### Preparing with docker
 
-* System dependencies
+```http
+  > docker build -t marvel-story .
+  > docker run marvel-story -p 3000
+```
 
-* Configuration
+### If you don't use docker, then
 
-* Database creation
+#### Install RVM
 
-* Database initialization
+```http
+  > \curl -sSL https://get.rvm.io | bash
+```
 
-* How to run the test suite
+#### Prepare the environment
 
-* Services (job queues, cache servers, search engines, etc.)
+In the project folder, run:
 
-* Deployment instructions
+```http
+  > bundle install
+```
 
-* ...
+#### Initializing your server
+
+```http
+  > rails s
+```
